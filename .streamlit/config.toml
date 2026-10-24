@@ -1,0 +1,30 @@
+# Based on Streamlit's bundled shadcn theme, adapted to Kaaryan Labs.
+[theme]
+base = "light"
+primaryColor = "#4169E1"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F8FA"
+textColor = "#0B0B0D"
+linkColor = "#4169E1"
+borderColor = "#E5E7EB"
+showWidgetBorder = true
+baseRadius = "6px"
+buttonRadius = "6px"
+font = "Geist"
+baseFontSize = 16
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+linkUnderline = false
+
+[[theme.fontFaces]]
+family = "Geist"
+url = "app/static/Geist-Variable.woff2"
+weight = "100 900"
+
+[server]
+address = "127.0.0.1"
+port = 8501
+runOnSave = true
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
