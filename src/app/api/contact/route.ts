@@ -17,8 +17,24 @@ export async function POST(request: NextRequest) {
   entry.count++; attempts.set(key, entry);
   let data: Record<string, unknown>;
   try {
-    const body = await request.text();
-    if (body.length > 16_000) return reply('Your inquiry is too large.', 413);
+    // Bound incoming bytes while reading, including requests without Content-Length.
+    const reader = request.body?.getReader();
+    if (!reader) return reply('We could not read your inquiry.', 400);
+    const chunks: Uint8Array[] = [];
+    let size = 0;
+    try {
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        size += value.byteLength;
+        if (size > 16_000) {
+          await reader.cancel();
+          return reply('Your inquiry is too large.', 413);
+        }
+        chunks.push(value);
+      }
+    } finally { reader.releaseLock(); }
+    const body = Buffer.concat(chunks, size).toString('utf8');
     data = JSON.parse(body);
     if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('Invalid payload');
   } catch { return reply('We could not read your inquiry.', 400); }

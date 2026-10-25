@@ -2,6 +2,24 @@
 
 A Kaaryan Labs website available as a native Streamlit app and a Next.js implementation. Both use the original supplied logos.
 
+The reference-driven design is implemented in **Next.js** and runs with `npm run dev`. The earlier native Streamlit version remains available separately.
+
+## Reference design and visual checks
+
+`design/website-reference.png` preserves the supplied reference. `src/components/sections.tsx` implements its hero, capability strip, About, divisions, expertise, workflow, principles, contact and footer. Navigation, form behavior and Motion scroll reveals are separate components. All fonts and artwork are served locally.
+
+The hero/studio images and division artwork are isolated crops of the image you supplied; no page screenshot is embedded as a website. The environment images are concepts, not claims about a physical office. The two original JPEGs are unchanged. `scripts/prepare-reference-assets.mjs` trims only surrounding whitespace to create display-ready logo assets. The file named `primary` contains the horizontal lockup; the file named `horizontal` contains the stacked design.
+
+Intentional differences from the reference: truthful positioning labels replace invented statistics, five capability labels replace unverified customer endorsements, no unconfigured social accounts or legal links are shown, and the form includes a required Project Type field and privacy/configuration messaging. The footer preserves the original black logo on a white tile. “Insights” navigates to the principles section rather than invented articles. The contact block is taller to accommodate real form states and notices. This is a close reference implementation, not a claim of pixel-perfect identity.
+
+With the Next.js server running, run:
+
+```sh
+node scripts/visual-check.mjs
+```
+
+The browser check discovers installed Chrome on Windows, macOS or Linux (override `CHROME_PATH` for another location), falling back to Playwright Chromium. If neither browser is installed, run `npx playwright install chromium`. It writes desktop/mobile screenshots and a report under `design/qa/`. It checks eight widths from 320px to 1920px, horizontal overflow, headline clipping, mobile menu/Escape/focus behavior, anchor targets, form validity and browser errors. Set `TEST_BASE_URL` if the server runs on another port. Screenshots at 1122px and 375px were directly reviewed against the supplied reference; saved screenshots use reduced motion to show every section. You can also run `npm run test:visual` and `npm run test:smoke`.
+
 ## Run with Streamlit
 
 On this Windows machine, run the included launcher from the project directory:
@@ -50,7 +68,7 @@ npm run typecheck
 npm run build
 ```
 
-With the dev server running and no contact provider configured, `node scripts/smoke-test.mjs` checks the rendered sections, logo assets, server validation, spam controls and missing-provider behavior. It intentionally exhausts the local ten-minute submission limit; restart the dev server before repeating it.
+With the dev server running and no contact provider configured, `node scripts/smoke-test.mjs` checks the rendered sections, logo assets, server validation, spam controls, malformed/oversized payloads and missing-provider behavior. It simulates isolated test addresses so repeated checks do not exhaust the normal local visitor's submission limit. Run this test only against a local or dedicated test instance.
 
 ## Contact configuration
 
@@ -60,11 +78,12 @@ Until a provider is configured, the page explicitly explains that inquiries are 
 
 The route validates fields on the server, rejects cross-origin browser submissions, limits payload size, includes a honeypot, times out provider requests, and limits attempts to five per ten minutes per address. The in-memory limiter is a local/single-instance safeguard. Before multi-instance production hosting, use a shared limiter or hosting-edge rules and ensure the reverse proxy overwrites `x-forwarded-for` with a trusted client address. Provider privacy/retention settings must match your actual policy.
 
-The original JPEG logos are retained unmodified in `public/brand`. Both supplied files have square canvases; they are displayed with their original aspect ratios. The primary image is also used as the favicon. The software visuals illustrate the approach and do not represent shipped products.
+The original JPEG logos are retained unmodified in `public/brand`. The whitespace-trimmed WebP derivatives preserve the original artwork proportions. The primary JPEG is also used as the favicon.
 
 ## Structure
 
-- `src/app/page.tsx`: all nine landing-page sections
+- `src/app/page.tsx`: section composition
+- `src/components/sections.tsx`: reference-driven sections
 - `src/app/globals.css`: responsive visual system and reduced-motion behavior
 - `src/components`: navigation, contact form and progressive scroll reveals
 - `src/lib/content.ts`: navigation, expertise, process and project options
