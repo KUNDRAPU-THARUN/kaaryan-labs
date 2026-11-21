@@ -12,38 +12,38 @@
   "sections": [
     {
       "id": "home",
-      "y": 56,
-      "height": 333
+      "y": 88,
+      "height": 721
     },
     {
       "id": "about",
-      "y": 476,
-      "height": 222
+      "y": 1005,
+      "height": 826
     },
     {
       "id": "divisions",
-      "y": 698,
-      "height": 187
+      "y": 1831,
+      "height": 879
     },
     {
       "id": "expertise",
-      "y": 884,
-      "height": 119
+      "y": 2710,
+      "height": 1975
     },
     {
       "id": "process",
-      "y": 1003,
-      "height": 144
+      "y": 5307,
+      "height": 870
     },
     {
       "id": "insights",
-      "y": 1147,
-      "height": 92
+      "y": 6736,
+      "height": 851
     },
     {
       "id": "contact",
-      "y": 1239,
-      "height": 189
+      "y": 7586,
+      "height": 1307
     }
   ],
   "browserErrors": [],
