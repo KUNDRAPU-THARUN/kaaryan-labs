@@ -8,7 +8,14 @@ const reply = (message: string, status: number) => NextResponse.json({ message }
 
 export async function POST(request: NextRequest) {
   const origin = request.headers.get('origin');
-  if (origin && origin !== request.nextUrl.origin) return reply('Submission origin is not allowed.', 403);
+  const allowedOrigins = [
+    request.nextUrl.origin,
+    'https://kaaryanlabs.in',
+    'https://www.kaaryanlabs.in',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+  ];
+  if (origin && !allowedOrigins.includes(origin)) return reply('Submission origin is not allowed.', 403);
   if (!request.headers.get('content-type')?.includes('application/json')) return reply('Please submit a JSON request.', 415);
 
   const key = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'local';
