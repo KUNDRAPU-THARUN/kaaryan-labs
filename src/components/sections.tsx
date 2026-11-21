@@ -589,6 +589,7 @@ export function Footer() {
                 alt="KAARYAN LABS — From Problem to Possibility"
                 width={1800}
                 height={486}
+                sizes="(max-width: 640px) 180px, 240px"
                 quality={100}
               />
             </Link>

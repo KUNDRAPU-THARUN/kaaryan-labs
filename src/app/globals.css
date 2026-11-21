@@ -5208,3 +5208,23 @@ h3 {
     align-items: stretch !important;
   }
 }
+
+/* Service CTA Bar Responsive Styling */
+.service-cta-bar .button {
+  max-width: 100%;
+  white-space: normal !important;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .service-cta-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .service-cta-bar .button {
+    width: 100% !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+}
