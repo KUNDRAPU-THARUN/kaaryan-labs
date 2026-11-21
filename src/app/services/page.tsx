@@ -72,7 +72,7 @@ export default function ServicesPage() {
               {divisions.map((d) => {
                 const Icon = d.icon;
                 return (
-                  <div className="summary-col" key={d.id}>
+                  <div className="summary-col" key={d.id} id={d.id}>
                     <div className="summary-header">
                       <span className="badge">{d.number}</span>
                       <Icon size={20} />

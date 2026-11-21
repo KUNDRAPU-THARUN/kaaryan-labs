@@ -1,0 +1,355 @@
+{
+  "navigation": [
+    {
+      "test": "Home top -> About Us",
+      "url": "http://127.0.0.1:3000/about-us",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "About Us (1500px) -> Services",
+      "url": "http://127.0.0.1:3000/services",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Services (2000px) -> Our Process",
+      "url": "http://127.0.0.1:3000/our-process",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Our Process (2500px) -> Startup Support",
+      "url": "http://127.0.0.1:3000/startup-support",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Startup Support (2000px) -> Insights",
+      "url": "http://127.0.0.1:3000/insights",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Insights (1500px) -> Contact Us",
+      "url": "http://127.0.0.1:3000/contact-us",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Contact Us (1500px) -> Home",
+      "url": "http://127.0.0.1:3000/",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Home (2000px) -> Start a Project",
+      "url": "http://127.0.0.1:3000/contact-us",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "About Us (1200px) -> Click About Us again",
+      "url": "http://127.0.0.1:3000/about-us",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Services (2500px) -> Footer Back to Top",
+      "url": "http://127.0.0.1:3000/services",
+      "scrollY": 0,
+      "pass": true
+    },
+    {
+      "test": "Browser Back to Home",
+      "url": "http://127.0.0.1:3000/",
+      "scrollY": 0,
+      "pass": true
+    }
+  ],
+  "capabilitiesRow": {
+    "1920px": {
+      "itemCount": 6,
+      "allSameLine": true,
+      "items": [
+        {
+          "text": "WEB APPLICATIONS",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "MOBILE SOFTWARE",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "AI SOLUTIONS",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "MARKET RESEARCH",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "CUSTOM PLATFORMS",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "SAAS DEVELOPMENT",
+          "top": 890,
+          "height": 37,
+          "width": 213
+        }
+      ]
+    },
+    "1440px": {
+      "itemCount": 6,
+      "allSameLine": true,
+      "items": [
+        {
+          "text": "WEB APPLICATIONS",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "MOBILE SOFTWARE",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "AI SOLUTIONS",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "MARKET RESEARCH",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "CUSTOM PLATFORMS",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        },
+        {
+          "text": "SAAS DEVELOPMENT",
+          "top": 877,
+          "height": 37,
+          "width": 213
+        }
+      ]
+    },
+    "1366px": {
+      "itemCount": 6,
+      "allSameLine": true,
+      "items": [
+        {
+          "text": "WEB APPLICATIONS",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        },
+        {
+          "text": "MOBILE SOFTWARE",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        },
+        {
+          "text": "AI SOLUTIONS",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        },
+        {
+          "text": "MARKET RESEARCH",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        },
+        {
+          "text": "CUSTOM PLATFORMS",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        },
+        {
+          "text": "SAAS DEVELOPMENT",
+          "top": 870,
+          "height": 36,
+          "width": 213
+        }
+      ]
+    },
+    "1025px": {
+      "itemCount": 6,
+      "allSameLine": true,
+      "items": [
+        {
+          "text": "WEB APPLICATIONS",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        },
+        {
+          "text": "MOBILE SOFTWARE",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        },
+        {
+          "text": "AI SOLUTIONS",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        },
+        {
+          "text": "MARKET RESEARCH",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        },
+        {
+          "text": "CUSTOM PLATFORMS",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        },
+        {
+          "text": "SAAS DEVELOPMENT",
+          "top": 863,
+          "height": 34,
+          "width": 158
+        }
+      ]
+    }
+  },
+  "serviceCards": {
+    "dimensions": {
+      "totalCards": 6,
+      "row1SameWidth": true,
+      "row1SameHeight": true,
+      "row2SameWidth": true,
+      "row2SameHeight": true,
+      "allCardsSameWidth": true,
+      "cardWidth": 411,
+      "cardHeights": [
+        250,
+        250
+      ],
+      "cards": [
+        {
+          "index": 0,
+          "title": "Software Development",
+          "width": 411,
+          "height": 250,
+          "top": 2805,
+          "left": 80,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        },
+        {
+          "index": 1,
+          "title": "Research as a Service (RaaS)",
+          "width": 411,
+          "height": 250,
+          "top": 2805,
+          "left": 515,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        },
+        {
+          "index": 2,
+          "title": "AI as a Service (AaaS)",
+          "width": 411,
+          "height": 250,
+          "top": 2805,
+          "left": 949,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        },
+        {
+          "index": 3,
+          "title": "Design & Branding",
+          "width": 411,
+          "height": 250,
+          "top": 3079,
+          "left": 80,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        },
+        {
+          "index": 4,
+          "title": "Digital Marketing",
+          "width": 411,
+          "height": 250,
+          "top": 3079,
+          "left": 515,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        },
+        {
+          "index": 5,
+          "title": "Content & Media Services",
+          "width": 411,
+          "height": 250,
+          "top": 3079,
+          "left": 949,
+          "padding": "28px 24px",
+          "borderRadius": "12px",
+          "borderWidth": "1px"
+        }
+      ]
+    },
+    "hover": {
+      "hoveredStyle": {
+        "backgroundColor": "rgb(244, 249, 255)",
+        "borderColor": "rgb(184, 215, 255)",
+        "boxShadow": "rgba(0, 119, 255, 0.08) 0px 6px 20px 0px",
+        "transform": "none"
+      },
+      "dimensionsUnchanged": true,
+      "initialBox": {
+        "x": 80,
+        "y": 2804.765625,
+        "width": 410.65625,
+        "height": 250
+      },
+      "hoveredBox": {
+        "x": 80,
+        "y": 364.3852844238281,
+        "width": 410.65625,
+        "height": 249.99996948242188
+      }
+    }
+  },
+  "responsive": {
+    "1920px": [],
+    "1440px": [],
+    "1366px": [],
+    "1024px": [],
+    "768px": [],
+    "430px": [],
+    "375px": [],
+    "320px": []
+  },
+  "consoleErrors": []
+}

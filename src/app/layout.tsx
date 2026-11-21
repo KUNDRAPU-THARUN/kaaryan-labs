@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
+import { ScrollRestoration } from '@/components/scroll-restoration';
 import './globals.css';
 
 const siteTitle = 'Kaaryan Labs | Software Products & Custom Solutions';
@@ -49,5 +50,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={GeistSans.className}>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body className={GeistSans.className}>
+        <ScrollRestoration />
+        {children}
+      </body>
+    </html>
+  );
 }

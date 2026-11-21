@@ -50,6 +50,13 @@ export function Navigation() {
     setOpen(false);
   }, [pathname]);
 
+  const handleNavClick = (href: string) => {
+    setOpen(false);
+    if (pathname === href) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <header ref={header} className={`header ${scrolled ? 'scrolled' : ''}`}>
       <nav className="container nav" aria-label="Main navigation">
@@ -57,7 +64,7 @@ export function Navigation() {
           className="brand-link"
           href="/"
           aria-label="KAARYAN LABS home"
-          onClick={() => setOpen(false)}
+          onClick={() => handleNavClick('/')}
         >
           <Image
             className="brand"
@@ -81,6 +88,7 @@ export function Navigation() {
                 href={href}
                 aria-current={isActive ? 'page' : undefined}
                 className={isActive ? 'active-link' : ''}
+                onClick={() => handleNavClick(href)}
               >
                 {label}
               </Link>
@@ -88,7 +96,11 @@ export function Navigation() {
           })}
         </div>
 
-        <Link className="button nav-cta" href="/contact-us">
+        <Link
+          className="button nav-cta"
+          href="/contact-us"
+          onClick={() => handleNavClick('/contact-us')}
+        >
           Start a Project <ArrowRight size={15} />
         </Link>
 
@@ -113,7 +125,7 @@ export function Navigation() {
                   key={href}
                   href={href}
                   aria-current={isActive ? 'page' : undefined}
-                  onClick={() => setOpen(false)}
+                  onClick={() => handleNavClick(href)}
                 >
                   {label}
                 </Link>
@@ -122,7 +134,7 @@ export function Navigation() {
             <Link
               className="button mobile-cta"
               href="/contact-us"
-              onClick={() => setOpen(false)}
+              onClick={() => handleNavClick('/contact-us')}
             >
               Start a Project <ArrowRight size={16} />
             </Link>

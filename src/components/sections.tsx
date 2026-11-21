@@ -31,6 +31,7 @@ import {
   insightArticles,
 } from '@/lib/content';
 import { ContactForm } from './contact-form';
+import { BackToTop } from './back-to-top';
 
 export function Hero() {
   return (
@@ -636,7 +637,7 @@ export function Footer() {
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} KAARYAN LABS. All rights reserved.</p>
           <span>RESEARCH. STRATEGY. TECHNOLOGY. GROWTH.</span>
-          <Link href="/">Back to top ↑</Link>
+          <BackToTop />
         </div>
       </div>
     </footer>
