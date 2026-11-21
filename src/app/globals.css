@@ -5394,3 +5394,469 @@ h3 {
     box-sizing: border-box !important;
   }
 }
+
+/* ==========================================================================
+   COMPREHENSIVE SMALL SCREEN & MOBILE OPTIMIZATIONS (320px – 768px)
+   ========================================================================== */
+
+/* 1. Header & Navigation on Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .header {
+    height: 60px !important;
+    background: #fffffffa !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05) !important;
+  }
+  .nav {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+  }
+  .brand-link {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .brand {
+    width: clamp(140px, 45vw, 170px) !important;
+    height: auto !important;
+    max-height: 34px !important;
+    object-fit: contain !important;
+  }
+  .desktop-links {
+    display: none !important;
+  }
+  /* Hide squished nav-cta button from compact top header bar; prominent CTA is inside mobile menu drawer */
+  .nav-cta {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    color: var(--ink) !important;
+    cursor: pointer !important;
+  }
+  .mobile-links {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: 60px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    max-height: calc(100dvh - 60px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    background: #ffffff !important;
+    padding: 16px 20px 32px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+    z-index: 50 !important;
+  }
+  .mobile-links > a:not(.button) {
+    display: flex !important;
+    align-items: center !important;
+    padding: 14px 12px !important;
+    font-size: 16px !important;
+    font-weight: 550 !important;
+    color: #1e293b !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    border-left: 3px solid transparent !important;
+    border-radius: 0 !important;
+    transition: background 150ms ease, color 150ms ease !important;
+  }
+  .mobile-links > a:not(.button):active,
+  .mobile-links > a[aria-current] {
+    background: #f0f7ff !important;
+    color: var(--blue) !important;
+    border-left-color: var(--blue) !important;
+  }
+  .mobile-cta {
+    margin-top: 18px !important;
+    width: 100% !important;
+    min-height: 48px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    border-radius: 8px !important;
+  }
+}
+
+/* 2. Hero, Positioning & Headings on Mobile (<= 640px) */
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .hero-inner {
+    padding: 0 !important;
+  }
+  .hero-eyebrow {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.8px !important;
+    color: var(--blue) !important;
+    margin-bottom: 12px !important;
+    display: block !important;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 8.5vw, 38px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 14px !important;
+  }
+  .hero-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #4b5563 !important;
+    margin-bottom: 22px !important;
+  }
+  .hero .actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .hero .actions .button {
+    width: 100% !important;
+    min-height: 46px !important;
+    font-size: 14.5px !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+  .positioning {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-top: 24px !important;
+    width: 100% !important;
+  }
+  .positioning > div {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 14px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+  }
+  .positioning strong {
+    font-size: 13.5px !important;
+    font-weight: 650 !important;
+    color: var(--ink) !important;
+    white-space: nowrap !important;
+  }
+  .positioning span {
+    font-size: 12px !important;
+    color: #64748b !important;
+    text-align: right !important;
+  }
+
+  .eyebrow {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.6px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 8px !important;
+  }
+  h2 {
+    font-size: clamp(22px, 6.5vw, 28px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+  }
+  .section-heading > p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #64748b !important;
+    max-width: 100% !important;
+  }
+  .section {
+    padding-block: 36px !important;
+  }
+
+  /* Capabilities row on mobile */
+  .trust-strip {
+    padding: 20px 0 !important;
+  }
+  .trust-strip > .container > p {
+    font-size: 10.5px !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 14px !important;
+  }
+  .capabilities {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+  .capabilities > span {
+    font-size: 11.5px !important;
+    padding: 9px 10px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 7px !important;
+    border-right: 1px solid #e2e8f0 !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+  }
+  .capabilities svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  /* About section on mobile */
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .about-copy h2 {
+    font-size: clamp(22px, 6.5vw, 28px) !important;
+  }
+  .about-copy > p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    color: #4b5563 !important;
+  }
+  .about-ctas {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .about-ctas .button {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 44px !important;
+  }
+  .about-value {
+    display: flex !important;
+    gap: 14px !important;
+    padding: 16px 14px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 10px !important;
+  }
+  .about-value h3 {
+    font-size: 16px !important;
+    margin-bottom: 4px !important;
+  }
+  .about-value p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;
+  }
+
+  /* Divisions on mobile */
+  .division-grid-three {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+  .division-card-v2 {
+    padding: 22px 18px !important;
+    border-radius: 12px !important;
+  }
+  .division-card-v2 h3 {
+    font-size: 19px !important;
+  }
+  .div-short {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+  }
+  .div-service-list li {
+    font-size: 13px !important;
+  }
+
+  /* Featured Capabilities on mobile */
+  .expertise-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .expertise-item {
+    padding: 22px 18px !important;
+    border-radius: 12px !important;
+  }
+  .expertise-item h3 {
+    font-size: 18px !important;
+  }
+  .expertise-item p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Contact Form on mobile */
+  .contact-form {
+    padding: 22px 18px !important;
+    border-radius: 12px !important;
+  }
+  .form-heading h3 {
+    font-size: 19px !important;
+  }
+  .form-heading p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+  }
+  .form-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+  .contact-form label,
+  .form-row label {
+    font-size: 13.5px !important;
+    font-weight: 550 !important;
+    color: #334155 !important;
+    margin-bottom: 6px !important;
+  }
+  .contact-form .field-hint {
+    font-size: 12.5px !important;
+    line-height: 1.5 !important;
+    color: #64748b !important;
+  }
+  .contact-form .privacy,
+  .contact-form .configuration-note {
+    font-size: 12px !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;
+  }
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 15px !important;
+    min-height: 46px !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+  }
+  .contact-form button[type="submit"] {
+    width: 100% !important;
+    min-height: 48px !important;
+    font-size: 15px !important;
+    justify-content: center !important;
+  }
+
+  /* Footer on mobile */
+  .footer {
+    padding-top: 36px !important;
+    padding-bottom: 24px !important;
+  }
+  .footer-top {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+  .footer-brand img {
+    width: 160px !important;
+    height: auto !important;
+  }
+  .footer-tagline-text {
+    font-size: 11px !important;
+    letter-spacing: 1.5px !important;
+  }
+  .footer-brief {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+  }
+  .footer-navigation h3,
+  .footer-contact-col h3 {
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+  }
+  .footer-navigation a,
+  .footer-contact-list a {
+    font-size: 13.5px !important;
+    padding: 5px 0 !important;
+  }
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center !important;
+    padding-top: 20px !important;
+    font-size: 12.5px !important;
+  }
+  .footer-bottom span {
+    display: none !important;
+  }
+
+  /* Page Header on subpages */
+  .page-header {
+    padding-block: 36px 28px !important;
+  }
+  .page-header h1 {
+    font-size: clamp(24px, 7vw, 32px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.8px !important;
+  }
+  .page-intro {
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Timeline & Process on mobile */
+  .timeline-card {
+    padding: 18px 14px !important;
+  }
+  .timeline-card h2 {
+    font-size: 18px !important;
+  }
+  .timeline-tagline {
+    font-size: 13px !important;
+  }
+  .timeline-description {
+    font-size: 13.5px !important;
+  }
+
+  /* Startup support highlights */
+  .startup-highlights {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 3. Extra Small Screens (<= 360px, e.g. iPhone SE, compact Androids) */
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 24px) !important;
+  }
+  .brand {
+    width: 135px !important;
+  }
+  .hero h1 {
+    font-size: 27px !important;
+  }
+  .capabilities {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .capabilities > span {
+    font-size: 11px !important;
+    padding: 8px 10px !important;
+  }
+  .positioning strong {
+    font-size: 12.5px !important;
+  }
+  .positioning span {
+    font-size: 11px !important;
+  }
+  .timeline-card {
+    padding: 16px 12px !important;
+  }
+  .timeline-card h2 {
+    font-size: 17px !important;
+  }
+  .service-detail-block {
+    padding: 20px 14px !important;
+  }
+}
