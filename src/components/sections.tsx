@@ -32,6 +32,7 @@ import {
 } from '@/lib/content';
 import { ContactForm } from './contact-form';
 import { BackToTop } from './back-to-top';
+import { ArticleCard } from './article-card';
 
 export function Hero() {
   return (
@@ -470,22 +471,7 @@ export function InsightsHome() {
 
         <div className="insights-home-grid reveal">
           {insightArticles.slice(0, 3).map((article) => (
-            <article className="insight-card" key={article.slug}>
-              <div className="insight-meta">
-                <span className="insight-tag">{article.category}</span>
-                <span className="insight-time">{article.readTime}</span>
-              </div>
-              <h3>
-                <Link href={`/insights/${article.slug}`}>{article.title}</Link>
-              </h3>
-              <p>{article.summary}</p>
-              <div className="insight-footer">
-                <span className="publisher-tag">{article.publisher}</span>
-                <Link href={`/insights/${article.slug}`} className="read-more">
-                  Read Article <ArrowRight size={14} />
-                </Link>
-              </div>
-            </article>
+            <ArticleCard key={article.slug} article={article} />
           ))}
         </div>
 

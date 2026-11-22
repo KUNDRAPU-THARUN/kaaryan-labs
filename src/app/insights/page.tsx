@@ -5,6 +5,7 @@ import { Navigation } from '@/components/navigation';
 import { Footer } from '@/components/sections';
 import { Reveal } from '@/components/reveal';
 import { WhatsAppButton } from '@/components/whatsapp-button';
+import { ArticleCard } from '@/components/article-card';
 import { insightArticles } from '@/lib/content';
 
 export const metadata: Metadata = {
@@ -52,8 +53,8 @@ export default function InsightsPage() {
         </header>
 
         {/* Categories Bar */}
-        <section className="section bg-soft" style={{ padding: '1.5rem 0' }}>
-          <div className="container">
+        <section className="section bg-soft" style={{ padding: '1.5rem 0', overflow: 'hidden' }}>
+          <div className="container" style={{ overflow: 'hidden' }}>
             <div className="category-scroll-bar">
               {categories.map((cat, i) => (
                 <span
@@ -70,41 +71,9 @@ export default function InsightsPage() {
         {/* Articles List */}
         <section className="section bg-white">
           <div className="container">
-            <div className="insights-grid">
+            <div className="insights-grid reveal">
               {insightArticles.map((article) => (
-                <article className="insight-full-card reveal" key={article.slug}>
-                  <div className="card-top-meta">
-                    <span className="badge">{article.category}</span>
-                    <span className="read-time-indicator">
-                      <Clock size={13} /> {article.readTime}
-                    </span>
-                  </div>
-
-                  <h2>
-                    <Link href={`/insights/${article.slug}`}>{article.title}</Link>
-                  </h2>
-
-                  <p className="article-summary">{article.summary}</p>
-
-                  <div className="article-tag-row">
-                    {article.tags.map((t) => (
-                      <span key={t} className="tag-chip">
-                        #{t}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="card-bottom-bar">
-                    <div className="publisher-info">
-                      <strong>{article.publisher}</strong>
-                      <span>{article.date}</span>
-                    </div>
-
-                    <Link href={`/insights/${article.slug}`} className="read-btn">
-                      Read Full Article <ArrowRight size={15} />
-                    </Link>
-                  </div>
-                </article>
+                <ArticleCard key={article.slug} article={article} showTags={true} />
               ))}
             </div>
           </div>

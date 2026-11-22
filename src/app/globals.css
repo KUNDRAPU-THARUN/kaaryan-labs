@@ -2790,7 +2790,7 @@ h3 {
     gap: 8px;
   }
   .capabilities>span:last-child {
-    grid-column: 1/-1;
+    grid-column: auto;
   }
   .positioning strong {
     font-size: clamp(7px,2.2vw,11px);
@@ -4354,11 +4354,15 @@ h3 {
 
 /* Insights Subpage & Reader */
 .category-scroll-bar {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
+  display: flex !important;
+  gap: 8px !important;
+  overflow-x: auto !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding-bottom: 6px !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 .category-scroll-bar::-webkit-scrollbar {
@@ -5409,93 +5413,171 @@ h3 {
   margin-top: 2rem;
 }
 .insight-card {
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 24px 22px;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
-  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  padding: 24px 22px !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, box-shadow 0.2s, background-color 0.2s !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
 }
 .insight-card:hover {
-  transform: translateY(-3px);
-  border-color: #93c5fd;
-  box-shadow: 0 10px 28px rgba(30, 90, 200, 0.09);
-  background: #f8fbff;
+  transform: translateY(-3px) !important;
+  border-color: #93c5fd !important;
+  box-shadow: 0 10px 28px rgba(30, 90, 200, 0.09) !important;
+  background: #f8fbff !important;
 }
-.insight-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 14px;
+
+/* 1. Article Metadata Row: [Category Badge] on Left, [Reading Time] on Right */
+.insight-card-meta,
+.insight-meta,
+.card-top-meta {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  width: 100% !important;
+  margin-bottom: 14px !important;
+  box-sizing: border-box !important;
 }
+.insight-category-badge,
 .insight-tag {
-  display: inline-block;
-  background: #eff6ff;
-  color: #1d4ed8;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  border: 1px solid #dbeafe;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  display: inline-flex !important;
+  align-items: center !important;
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #dbeafe !important;
+  border-radius: 9999px !important;
+  padding: 4px 12px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.4px !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
-.insight-time {
-  font-size: 12px;
-  color: #64748b;
-  font-weight: 500;
+.insight-read-time,
+.insight-time,
+.read-time-indicator {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #64748b !important;
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
-.insight-card h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.35;
-  color: #0f172a;
-  margin: 0 0 10px 0;
+.insight-read-time svg,
+.read-time-indicator svg {
+  flex-shrink: 0 !important;
+  color: #64748b !important;
 }
-.insight-card h3 a {
-  color: inherit;
-  text-decoration: none;
+
+/* 2. Article Title */
+.insight-card-title,
+.insight-card h3,
+.insight-card h2 {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.015em !important;
+  color: #0f172a !important;
+  margin: 0 0 10px 0 !important;
 }
-.insight-card h3 a:hover {
-  color: var(--blue, #0284c7);
+.insight-card-title a,
+.insight-card h3 a,
+.insight-card h2 a {
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
 }
+.insight-card-title a:hover,
+.insight-card h3 a:hover,
+.insight-card h2 a:hover {
+  color: #0055cc !important;
+}
+
+/* 3. Article Description */
+.insight-card-description,
 .insight-card p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #475569;
-  margin: 0 0 18px 0;
-  flex-grow: 1;
+  font-size: 14px !important;
+  line-height: 1.62 !important;
+  color: #475569 !important;
+  margin: 0 0 18px 0 !important;
+  flex-grow: 1 !important;
 }
-.insight-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding-top: 14px;
-  border-top: 1px solid #f1f5f9;
-  margin-top: auto;
+
+/* Article Tags Row */
+.insight-tag-row,
+.article-tag-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-bottom: 16px !important;
 }
-.publisher-tag {
-  font-size: 12px;
-  font-weight: 600;
-  color: #64748b;
+.insight-tag-row .tag-chip,
+.article-tag-row .tag-chip {
+  font-size: 11.5px !important;
+  color: #64748b !important;
+  background: #f1f5f9 !important;
+  padding: 3px 8px !important;
+  border-radius: 4px !important;
 }
-.insight-footer .read-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 13px;
-  font-weight: 650;
-  color: var(--blue, #0284c7);
-  text-decoration: none;
-  transition: gap 0.2s ease;
+
+/* 4. Article Footer: Author on Left, Read Action on Right */
+.insight-card-footer,
+.insight-footer,
+.card-bottom-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  width: 100% !important;
+  border-top: 1px solid #f1f5f9 !important;
+  padding-top: 14px !important;
+  margin-top: auto !important;
+  box-sizing: border-box !important;
 }
-.insight-footer .read-more:hover {
-  gap: 8px;
+.insight-author-info,
+.publisher-info {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+.insight-author,
+.publisher-tag,
+.publisher-info strong {
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+}
+.insight-date,
+.publisher-info span {
+  font-size: 11.5px !important;
+  color: #94a3b8 !important;
+}
+.insight-read-action,
+.insight-footer .read-more,
+.read-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 13.5px !important;
+  font-weight: 650 !important;
+  color: #0055cc !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  transition: gap 0.2s ease !important;
+  flex-shrink: 0 !important;
+}
+.insight-read-action:hover,
+.insight-footer .read-more:hover,
+.read-btn:hover {
+  gap: 9px !important;
 }
 @media (max-width: 1024px) {
   .insights-home-grid {
@@ -5848,6 +5930,10 @@ h3 {
     white-space: normal !important;
     line-height: 1.25 !important;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02) !important;
+    grid-column: auto !important;
+  }
+  .capabilities > span:last-child {
+    grid-column: auto !important;
   }
   .capabilities svg {
     width: 18px !important;
@@ -5953,92 +6039,219 @@ h3 {
     color: #475569 !important;
   }
 
-  /* Insights Section on Homepage */
-  .insights-home-grid {
-    grid-template-columns: 1fr !important;
+  /* Insights Section on Homepage & Subpage */
+  .insights-home-grid,
+  .insights-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
     gap: 16px !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
-  .insight-card {
-    padding: 22px 18px !important;
+  .insight-card,
+  .insight-full-card {
+    padding: 20px 18px !important;
     border-radius: 12px !important;
     background: #ffffff !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
-  .insight-card h3 {
+  .insight-card-meta,
+  .insight-meta,
+  .card-top-meta {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    margin-bottom: 12px !important;
+    width: 100% !important;
+  }
+  .insight-category-badge,
+  .insight-tag,
+  .card-top-meta .badge {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    padding: 3px 10px !important;
+  }
+  .insight-read-time,
+  .insight-time,
+  .read-time-indicator {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #64748b !important;
+  }
+  .insight-card-title,
+  .insight-card h3,
+  .insight-card h2,
+  .insight-full-card h2 {
     font-size: 17.5px !important;
     font-weight: 700 !important;
+    line-height: 1.35 !important;
+    margin-bottom: 10px !important;
   }
-  .insight-card p {
+  .insight-card-description,
+  .insight-card p,
+  .article-summary {
     font-size: 14px !important;
     line-height: 1.6 !important;
     color: #475569 !important;
+    margin-bottom: 16px !important;
   }
-  .insight-tag {
-    font-size: 11.5px !important;
-    font-weight: 700 !important;
+  .insight-card-footer,
+  .insight-footer,
+  .card-bottom-bar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    border-top: 1px solid #f1f5f9 !important;
+    padding-top: 14px !important;
+    margin-top: auto !important;
+    width: 100% !important;
   }
-  .insight-time {
+  .insight-author,
+  .publisher-tag,
+  .publisher-info strong {
     font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
   }
-  .insight-footer .read-more {
+  .insight-read-action,
+  .insight-footer .read-more,
+  .read-btn {
     min-height: 40px !important;
     display: inline-flex !important;
     align-items: center !important;
     font-size: 13.5px !important;
     font-weight: 650 !important;
+    color: #0055cc !important;
+    white-space: nowrap !important;
   }
 
   /* Contact Form & Input Fields */
   .contact-form {
     padding: 22px 18px !important;
     border-radius: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   .form-heading h3 {
     font-size: 19px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
   }
   .form-heading p {
     font-size: 14px !important;
     line-height: 1.6 !important;
+    color: #64748b !important;
+    margin-bottom: 18px !important;
   }
   .form-row {
     display: flex !important;
     flex-direction: column !important;
     gap: 14px !important;
+    width: 100% !important;
   }
   .contact-form label,
   .form-row label {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    width: 100% !important;
     font-size: 13.5px !important;
     font-weight: 600 !important;
     color: #334155 !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 4px !important;
+    box-sizing: border-box !important;
   }
   .contact-form .field-hint {
     font-size: 12.5px !important;
     line-height: 1.5 !important;
     color: #64748b !important;
+    margin-top: 4px !important;
   }
-  .contact-form .privacy,
-  .contact-form .configuration-note {
+  .contact-form .privacy {
     font-size: 12.5px !important;
     line-height: 1.55 !important;
     color: #64748b !important;
+    margin: 12px 0 !important;
+  }
+  .contact-form .configuration-note {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: #fffbeb !important;
+    border: 1px solid #fde68a !important;
+    color: #92400e !important;
+    padding: 12px 14px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    margin: 14px 0 !important;
+    box-sizing: border-box !important;
   }
   .contact-form input,
   .contact-form select,
   .contact-form textarea {
+    width: 100% !important;
+    max-width: 100% !important;
     font-size: 15px !important;
     min-height: 46px !important;
     border-radius: 8px !important;
     padding: 10px 14px !important;
+    border: 1px solid #cbd5e1 !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
   }
   .contact-form textarea {
     min-height: 120px !important;
+    resize: vertical !important;
   }
-  .contact-form button[type="submit"] {
+  .contact-form button[type="submit"],
+  .contact-form .button.form-submit-btn {
     width: 100% !important;
     min-height: 48px !important;
     font-size: 15px !important;
     font-weight: 650 !important;
     justify-content: center !important;
+    border-radius: 9px !important;
+    box-sizing: border-box !important;
+  }
+  .direct-reachout {
+    margin-top: 22px !important;
+    padding-top: 18px !important;
+    border-top: 1px solid #f1f5f9 !important;
+    width: 100% !important;
+  }
+  .reachout-text {
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    margin-bottom: 12px !important;
+  }
+  .reachout-chips {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .reachout-chip {
+    width: 100% !important;
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 10px 16px !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    box-sizing: border-box !important;
   }
 
   /* Footer Stacked Layout */
@@ -6098,21 +6311,26 @@ h3 {
 
   /* Floating WhatsApp Button */
   .whatsapp-float {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
     padding: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     border-radius: 50% !important;
-    bottom: max(20px, env(safe-area-inset-bottom, 20px)) !important;
-    right: 18px !important;
-    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4) !important;
+    bottom: max(16px, env(safe-area-inset-bottom, 16px)) !important;
+    right: 16px !important;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
+    z-index: 40 !important;
   }
   .whatsapp-label {
     display: none !important;
+  }
+  .whatsapp-float svg {
+    width: 22px !important;
+    height: 22px !important;
   }
 
   /* Process Timeline on Mobile */
@@ -6243,12 +6461,13 @@ h3 {
     letter-spacing: -0.025em !important;
   }
   .capabilities {
-    grid-template-columns: 1fr !important;
-    gap: 8px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px 6px !important;
   }
   .capabilities > span {
-    font-size: 12px !important;
-    padding: 9px 11px !important;
+    font-size: 11.5px !important;
+    padding: 8px 6px !important;
+    letter-spacing: 0 !important;
   }
   .positioning > div {
     padding: 10px 12px !important;
@@ -6267,5 +6486,27 @@ h3 {
   }
   .service-detail-block {
     padding: 18px 14px !important;
+  }
+  .insight-card,
+  .insight-full-card {
+    padding: 16px 12px !important;
+  }
+  .insight-card-meta,
+  .insight-meta,
+  .card-top-meta {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+  .insight-card-footer,
+  .insight-footer,
+  .card-bottom-bar {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+  .insight-author-info {
+    width: 100% !important;
+  }
+  .insight-read-action {
+    margin-left: auto !important;
   }
 }
