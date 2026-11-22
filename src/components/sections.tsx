@@ -492,67 +492,74 @@ export function Contact({ configured }: { configured: boolean }) {
         <div className="contact-copy reveal">
           <p className="eyebrow">LET’S BUILD TOGETHER</p>
           <h2>Have a problem worth solving?</h2>
-          <p>
+          <p className="contact-intro">
             Whether you are exploring a new digital product idea, need an experienced software development partner,
             or want research-backed market intelligence, we would love to understand your goals.
           </p>
 
-          <div className="contact-details-box">
-            <h3>Direct Contact Channels</h3>
-            <div className="contact-item">
-              <Phone size={18} />
-              <div>
-                <strong>Phone / Call:</strong>
-                <a href={COMPANY.phoneTel} className="contact-link">
-                  {COMPANY.phone}
-                </a>
+          <div className="contact-cards-stack">
+            {/* WhatsApp */}
+            <a
+              href={COMPANY.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-card-box whatsapp"
+              aria-label="Message KAARYAN LABS on WhatsApp"
+            >
+              <span className="round-icon whatsapp-bg">
+                <MessageCircle size={22} />
+              </span>
+              <div className="contact-card-text">
+                <strong className="channel-title">WhatsApp Direct Support</strong>
+                <span className="channel-value">+91 9493934972</span>
+                <span className="channel-note">Click for immediate conversation & quick discussion</span>
               </div>
-            </div>
+              <ExternalLink size={16} className="card-external-arrow" />
+            </a>
 
-            <div className="contact-item">
-              <Mail size={18} />
-              <div>
-                <strong>Email:</strong>
-                <a href={COMPANY.emailMailto} className="contact-link">
-                  {COMPANY.email}
-                </a>
+            {/* Phone */}
+            <a href={COMPANY.phoneTel} className="contact-card-box" aria-label="Call KAARYAN LABS directly">
+              <span className="round-icon phone-bg">
+                <Phone size={22} />
+              </span>
+              <div className="contact-card-text">
+                <strong className="channel-title">Direct Phone Call</strong>
+                <span className="channel-value">{COMPANY.phone}</span>
+                <span className="channel-note">Available Mon – Sat, 9:00 AM – 7:00 PM IST</span>
               </div>
-            </div>
+            </a>
 
-            <div className="contact-item">
-              <MessageCircle size={18} />
-              <div>
-                <strong>WhatsApp:</strong>
-                <a
-                  href={COMPANY.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-link"
-                >
-                  Message on WhatsApp (+91 9493934972)
-                </a>
+            {/* Email */}
+            <a href={COMPANY.emailMailto} className="contact-card-box" aria-label="Email KAARYAN LABS">
+              <span className="round-icon email-bg">
+                <Mail size={22} />
+              </span>
+              <div className="contact-card-text">
+                <strong className="channel-title">Official Email Address</strong>
+                <span className="channel-value">{COMPANY.email}</span>
+                <span className="channel-note">For formal proposals, inquiries & RFP documents</span>
               </div>
-            </div>
+            </a>
           </div>
 
-          <div className="social-links-block">
-            <span className="social-heading">Connect with KAARYAN LABS:</span>
-            <div className="social-pills">
+          <div className="social-block-card">
+            <span className="social-heading">Connect with KAARYAN LABS</span>
+            <div className="social-buttons-row">
               <a
                 href={COMPANY.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-pill"
+                className="social-btn linkedin"
               >
-                LinkedIn <ExternalLink size={12} />
+                LinkedIn Profile <ExternalLink size={12} />
               </a>
               <a
                 href={COMPANY.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-pill"
+                className="social-btn instagram"
               >
-                Instagram <ExternalLink size={12} />
+                Instagram Profile <ExternalLink size={12} />
               </a>
             </div>
           </div>

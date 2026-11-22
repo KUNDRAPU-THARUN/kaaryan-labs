@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-22T09:56:18.459Z",
+  "timestamp": "2026-11-22T11:13:36.424Z",
   "viewportsTested": [
     "width-320",
     "width-360",
@@ -21,7 +21,908 @@
     "/contact-us"
   ],
   "overflows": [],
-  "tinyText": [],
+  "tinyText": [
+    {
+      "viewport": "width-320",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "WEB APPLICATIONS",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "MOBILE SOFTWARE",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "AI SOLUTIONS",
+          "fontSize": "11px",
+          "className": ""
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-320",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "WEB APPLICATIONS",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "MOBILE SOFTWARE",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "SPAN",
+          "text": "AI SOLUTIONS",
+          "fontSize": "11px",
+          "className": ""
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-360",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "P",
+          "text": "OUR THREE DIVISIONS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FEATURED CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "WHY CHOOSE KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-375",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "P",
+          "text": "OUR THREE DIVISIONS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FEATURED CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "WHY CHOOSE KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-390",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "P",
+          "text": "OUR THREE DIVISIONS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FEATURED CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "WHY CHOOSE KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-412",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH. STRATEGY. TECHNOLOGY. GRO",
+          "fontSize": "11px",
+          "className": "hero-eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "BUILT FOR VISIONARIES, BUILDERS AND",
+          "fontSize": "11px",
+          "className": ""
+        },
+        {
+          "tag": "P",
+          "text": "OUR THREE DIVISIONS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FEATURED CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "WHY CHOOSE KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/about-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "ABOUT KAARYAN LABS",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR CORE FOUNDATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "OUR WORKING APPROACH",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/services",
+      "items": [
+        {
+          "tag": "P",
+          "text": "OUR CORE DIVISIONS & CAPABILITIES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/our-process",
+      "items": [
+        {
+          "tag": "P",
+          "text": "A RESEARCH-FIRST METHODOLOGY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "COLLABORATION PRINCIPLES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/startup-support",
+      "items": [
+        {
+          "tag": "P",
+          "text": "DEDICATED FOUNDER PARTNERSHIP",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "THE 7-PHASE FOUNDER JOURNEY",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        },
+        {
+          "tag": "P",
+          "text": "FLEXIBLE ENGAGEMENT",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/insights",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RESEARCH & INDUSTRY PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/insights/from-problem-to-possibility-research-led-software",
+      "items": [
+        {
+          "tag": "P",
+          "text": "RELATED PERSPECTIVES",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    },
+    {
+      "viewport": "width-430",
+      "page": "/contact-us",
+      "items": [
+        {
+          "tag": "P",
+          "text": "START A CONVERSATION",
+          "fontSize": "11px",
+          "className": "eyebrow"
+        }
+      ]
+    }
+  ],
   "tapTargetIssues": [],
   "navigationChecks": {
     "width-320": {
