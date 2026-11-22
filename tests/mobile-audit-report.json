@@ -1,77 +1,63 @@
 {
+  "timestamp": "2026-11-22T09:04:05.293Z",
+  "viewportsTested": [
+    "width-320",
+    "width-360",
+    "width-375",
+    "width-390",
+    "width-412",
+    "width-430",
+    "width-768",
+    "width-1024"
+  ],
+  "pagesTested": [
+    "/",
+    "/about-us",
+    "/services",
+    "/our-process",
+    "/startup-support",
+    "/insights",
+    "/insights/from-problem-to-possibility-research-led-software",
+    "/contact-us"
+  ],
   "overflows": [],
-  "tapTargets": [],
-  "mobileMenu": {
-    "iphone-se-375": {
-      "isToggleVisible": true,
-      "toggleBox": {
-        "x": 311,
-        "y": 8,
-        "width": 44,
-        "height": 44
-      },
-      "isMenuVisible": true,
-      "menuLinks": 8
+  "tinyText": [],
+  "tapTargetIssues": [],
+  "navigationChecks": {
+    "width-320": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
     },
-    "small-mobile-320": {
-      "isToggleVisible": true,
-      "toggleBox": {
-        "x": 264,
-        "y": 8,
-        "width": 44,
-        "height": 44
-      },
-      "isMenuVisible": true,
-      "menuLinks": 8
+    "width-360": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
     },
-    "android-412": {
-      "isToggleVisible": true,
-      "toggleBox": {
-        "x": 348,
-        "y": 8,
-        "width": 44,
-        "height": 44
-      },
-      "isMenuVisible": true,
-      "menuLinks": 8
+    "width-375": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
+    },
+    "width-390": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
+    },
+    "width-412": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
+    },
+    "width-430": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
+    },
+    "width-768": {
+      "toggleVisible": true,
+      "menuOpens": true,
+      "linksCount": 8
     }
-  },
-  "textSizes": [
-    {
-      "viewport": "iphone-se-375",
-      "page": "/",
-      "tinyText": [
-        {
-          "tag": "P",
-          "text": "BUILT FOR VISIONARIES, BUILDER",
-          "fontSize": "10.5px",
-          "className": ""
-        }
-      ]
-    },
-    {
-      "viewport": "small-mobile-320",
-      "page": "/",
-      "tinyText": [
-        {
-          "tag": "P",
-          "text": "BUILT FOR VISIONARIES, BUILDER",
-          "fontSize": "10.5px",
-          "className": ""
-        }
-      ]
-    },
-    {
-      "viewport": "android-412",
-      "page": "/",
-      "tinyText": [
-        {
-          "tag": "P",
-          "text": "BUILT FOR VISIONARIES, BUILDER",
-          "fontSize": "10.5px",
-          "className": ""
-        }
-      ]
-    }
-  ]
+  }
 }

@@ -97,7 +97,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 }
 
 .desktop-links a {
-  font-size: clamp(10px,.8vw,12px);
+  font-size: clamp(12.5px, 0.9vw, 14.5px);
+  font-weight: 500;
   position: relative;
   padding: 10px 0;
   white-space: nowrap;
@@ -164,9 +165,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 }
 
 .button.compact {
-  min-height: 32px;
-  padding: 7px 22px;
-  font-size: 10px;
+  min-height: 38px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .nav-cta {
@@ -281,7 +283,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 
 .positioning strong {
   display: block;
-  font-size: clamp(10px,1.1vw,15px);
+  font-size: clamp(13px, 1.1vw, 15px);
   letter-spacing: -.35px;
   font-weight: 650;
   white-space: nowrap;
@@ -289,7 +291,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 
 .positioning span {
   display: block;
-  font-size: clamp(7px,.68vw,9px);
+  font-size: clamp(11.5px, 0.8vw, 13px);
   line-height: 1.5;
   color: #646d7b;
   margin-top: 3px;
@@ -324,9 +326,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .trust-strip>.container>p {
   text-align: center;
   color: #5e6573;
-  font-size: 7px;
+  font-size: clamp(11px, 0.8vw, 12.5px);
   font-weight: 600;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   margin: 0 0 18px;
 }
 
@@ -649,7 +651,7 @@ h3 {
   padding: 12px 9px;
   white-space: nowrap;
   transition: background .2s,transform .2s;
-  font-size: clamp(8px,.76vw,11px);
+  font-size: clamp(12px, 0.85vw, 13.5px);
   min-height: 42px;
 }
 
@@ -826,20 +828,20 @@ h3 {
 .contact-form label {
   display: block;
   min-width: 0;
-  font-size: 10px;
+  font-size: 13.5px;
   color: #616b7c;
 }
 
 .contact-form input,.contact-form textarea,.contact-form select {
   width: 100%;
   display: block;
-  font-size: 10px;
+  font-size: 14px;
   border: 1px solid #e0e7f0;
   background: white;
-  border-radius: 5px;
-  padding: 7px 10px;
+  border-radius: 6px;
+  padding: 8px 12px;
   color: var(--ink);
-  min-height: 31px;
+  min-height: 38px;
 }
 
 .contact-form input::placeholder,.contact-form textarea::placeholder {
@@ -858,14 +860,14 @@ h3 {
 }
 
 .contact-form textarea {
-  min-height: 48px;
+  min-height: 60px;
   resize: vertical;
 }
 
 .contact-form .button {
-  min-height: 34px;
-  padding: 8px 14px;
-  font-size: 10px;
+  min-height: 40px;
+  padding: 8px 16px;
+  font-size: 13.5px;
 }
 
 .button:disabled {
@@ -967,19 +969,20 @@ h3 {
 }
 
 .footer-navigation h3 {
-  font-size: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
   color: #f0f1f3;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .footer-navigation>div {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 6px 18px;
+  gap: 8px 18px;
 }
 
 .footer-navigation a {
-  font-size: 8px;
+  font-size: 12.5px;
   white-space: nowrap;
   color: #b9bdc6;
 }
@@ -1011,8 +1014,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 8px;
-  padding: 8px 0;
+  font-size: 13px;
+  padding: 16px 0;
 }
 
 .footer-bottom p {
@@ -1020,7 +1023,7 @@ h3 {
 }
 
 .footer-bottom>span {
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1.5px;
 }
 
@@ -1133,9 +1136,9 @@ h3 {
     font-size: 12px;
   }
   .actions .button {
-    min-height: 33px;
-    padding: 8px 19px;
-    font-size: 10px;
+    min-height: 42px;
+    padding: 10px 20px;
+    font-size: 13.5px;
   }
   .positioning {
     margin-top: 25px;
@@ -1144,10 +1147,10 @@ h3 {
     padding-inline: 14px;
   }
   .positioning strong {
-    font-size: 11px;
+    font-size: 13.5px;
   }
   .positioning span {
-    font-size: 7px;
+    font-size: 12px;
   }
   .about-grid {
     gap: 24px;
@@ -1230,20 +1233,20 @@ h3 {
     letter-spacing: -2px;
   }
   .hero-eyebrow {
-    font-size: 7px;
-    letter-spacing: 2.7px;
+    font-size: 11.5px;
+    letter-spacing: 2px;
   }
   .hero-description {
-    font-size: 11px;
+    font-size: 14px;
   }
   .positioning>div {
     padding-inline: 10px;
   }
   .positioning strong {
-    font-size: 10px;
+    font-size: 13px;
   }
   .positioning span {
-    font-size: 6px;
+    font-size: 11.5px;
   }
   .about-grid {
     grid-template-columns: 1.5fr 1fr 1.1fr;
@@ -1411,10 +1414,10 @@ h3 {
     border: 0;
   }
   .positioning strong {
-    font-size: 10px;
+    font-size: 13px;
   }
   .positioning span {
-    font-size: 7px;
+    font-size: 11.5px;
   }
   .actions {
     gap: 9px;
@@ -1508,7 +1511,7 @@ h3 {
     gap: 9px;
   }
   .expertise-item {
-    font-size: 9px;
+    font-size: 13px;
     gap: 9px;
     padding: 12px 6px;
   }
@@ -1756,9 +1759,10 @@ h3 {
     margin: 12px 0 16px;
   }
   .button.compact {
-    min-height: 39px;
-    padding: 10px 20px;
-    font-size: 11px;
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 13.5px;
+    font-weight: 600;
   }
   .studio {
     min-height: 0;
@@ -1975,7 +1979,7 @@ h3 {
     grid-template-columns: 1fr;
   }
   .privacy,.configuration-note {
-    font-size: 10px;
+    font-size: 12.5px;
     line-height: 1.6;
   }
   .configuration-note {
@@ -2023,7 +2027,7 @@ h3 {
   }
   .footer-bottom {
     align-items: flex-start;
-    font-size: 8px;
+    font-size: 12px;
     gap: 15px;
     line-height: 1.5;
   }
@@ -2071,10 +2075,10 @@ h3 {
     padding-inline: 8px;
   }
   .positioning strong {
-    font-size: 8px;
+    font-size: 13px;
   }
   .positioning span {
-    font-size: 6px;
+    font-size: 11.5px;
   }
   .capabilities>span {
     font-size: 9px;
@@ -2193,7 +2197,7 @@ h3 {
     font-size: 13px;
   }
   .positioning span {
-    font-size: 10px;
+    font-size: 12px;
     white-space: normal;
   }
   .hero-art {
@@ -2480,7 +2484,7 @@ h3 {
     font-size: 13px;
   }
   .privacy,.configuration-note {
-    font-size: 11px;
+    font-size: 12.5px;
     line-height: 1.6;
   }
   .configuration-note {
@@ -2520,7 +2524,7 @@ h3 {
   }
   .footer-bottom {
     padding-block: 18px;
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -3719,7 +3723,7 @@ h3 {
 }
 
 .timeline-badge {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--blue);
   text-transform: uppercase;
@@ -4023,11 +4027,11 @@ h3 {
   left: 26px;
   background: var(--blue);
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 20px;
 }
 
@@ -4792,7 +4796,7 @@ h3 {
 }
 
 .opt {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   color: var(--muted);
   margin-left: 4px;
@@ -5101,13 +5105,13 @@ h3 {
     margin-left: auto;
   }
   .desktop-links a {
-    font-size: clamp(10.5px, 0.9vw, 12px);
+    font-size: clamp(12px, 0.95vw, 13.5px);
     padding: 6px 0;
   }
   .nav-cta {
-    padding: 7px 12px;
-    font-size: 11px;
-    margin-left: 4px;
+    padding: 8px 14px;
+    font-size: 12px;
+    margin-left: 6px;
     white-space: nowrap;
   }
 }
@@ -5124,9 +5128,9 @@ h3 {
 .trust-strip > .container > p {
   text-align: center !important;
   color: #5e6573 !important;
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 650 !important;
-  letter-spacing: 2.2px !important;
+  letter-spacing: 2px !important;
   margin: 0 0 20px !important;
   text-transform: uppercase !important;
 }
@@ -5181,7 +5185,7 @@ h3 {
   .capabilities > span {
     border-right: none !important;
     padding: 6px 8px !important;
-    font-size: 11.5px !important;
+    font-size: 12.5px !important;
     justify-content: center !important;
   }
 }
@@ -5194,7 +5198,7 @@ h3 {
   .capabilities > span {
     border-right: none !important;
     padding: 6px 6px !important;
-    font-size: 10.5px !important;
+    font-size: 12px !important;
     justify-content: flex-start !important;
   }
 }
@@ -5432,7 +5436,7 @@ h3 {
   display: inline-block;
   background: #eff6ff;
   color: #1d4ed8;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 9999px;
@@ -5500,15 +5504,40 @@ h3 {
 }
 
 /* ==========================================================================
-   COMPREHENSIVE SMALL SCREEN & MOBILE OPTIMIZATIONS (320px – 768px)
+   KAARYAN LABS — EXECUTIVE MOBILE-FIRST DESIGN SYSTEM
+   Standardized layout, fluid typography, 44px+ tap targets, and touch-first UX
    ========================================================================== */
 
-/* 1. Header & Navigation on Mobile (<= 768px) */
+/* Universal Responsive Standards for Mobile & Tablets (<= 768px) */
 @media (max-width: 768px) {
+  /* Page horizontal margins & containers */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-inline: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Standardized Section Vertical Rhythm */
+  .section {
+    padding-block: clamp(38px, 8vw, 54px) !important;
+  }
+
+  /* Universal Anchor Offset for Sticky Header */
+  [id] {
+    scroll-margin-top: 72px !important;
+  }
+
+  /* Header & Navigation */
   .header {
     height: 60px !important;
-    background: #fffffffa !important;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05) !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    box-shadow: 0 1px 12px rgba(15, 23, 42, 0.05) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
   }
   .nav {
     height: 100% !important;
@@ -5518,7 +5547,7 @@ h3 {
     gap: 12px !important;
   }
   .brand-link {
-    display: flex !important;
+    display: inline-flex !important;
     align-items: center !important;
   }
   .brand {
@@ -5530,7 +5559,6 @@ h3 {
   .desktop-links {
     display: none !important;
   }
-  /* Hide squished nav-cta button from compact top header bar; prominent CTA is inside mobile menu drawer */
   .nav-cta {
     display: none !important;
   }
@@ -5545,7 +5573,7 @@ h3 {
     padding: 0 !important;
     background: transparent !important;
     border: 1px solid #e2e8f0 !important;
-    border-radius: 8px !important;
+    border-radius: 9px !important;
     color: var(--ink) !important;
     cursor: pointer !important;
   }
@@ -5561,16 +5589,17 @@ h3 {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
     background: #ffffff !important;
-    padding: 16px 20px 32px !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+    padding: 16px 20px 36px !important;
+    box-shadow: 0 24px 48px rgba(15, 23, 42, 0.14) !important;
     z-index: 50 !important;
   }
   .mobile-links > a:not(.button) {
     display: flex !important;
     align-items: center !important;
-    padding: 14px 12px !important;
+    min-height: 48px !important;
+    padding: 12px 14px !important;
     font-size: 16px !important;
-    font-weight: 550 !important;
+    font-weight: 600 !important;
     color: #1e293b !important;
     border-bottom: 1px solid #f1f5f9 !important;
     border-left: 3px solid transparent !important;
@@ -5591,16 +5620,109 @@ h3 {
     font-weight: 600 !important;
     justify-content: center !important;
     box-sizing: border-box !important;
-    border-radius: 8px !important;
+    border-radius: 9px !important;
+  }
+
+  /* Universal Fluid Headings & Typographic Hierarchy */
+  h1 {
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.025em !important;
+  }
+  h2 {
+    font-size: clamp(22px, 5.5vw, 28px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.02em !important;
+  }
+  h3 {
+    font-size: clamp(17px, 4.5vw, 19px) !important;
+    line-height: 1.35 !important;
+  }
+  p {
+    font-size: 14.5px !important;
+    line-height: 1.62 !important;
+    color: #475569 !important;
+  }
+  .eyebrow {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.6px !important;
+    color: var(--blue) !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+  }
+  .section-heading > p {
+    font-size: 14.5px !important;
+    line-height: 1.62 !important;
+    color: #64748b !important;
+    max-width: 100% !important;
+  }
+
+  /* Touch Targets: Standardized Buttons */
+  .button:not(.nav-cta),
+  .button.secondary:not(.nav-cta),
+  a.button:not(.nav-cta) {
+    min-height: 46px !important;
+    padding: 12px 20px !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    border-radius: 9px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+    word-break: break-word !important;
+  }
+  .nav-cta,
+  a.nav-cta,
+  .button.nav-cta {
+    display: none !important;
+  }
+  .button.compact {
+    min-height: 44px !important;
+    padding: 10px 18px !important;
+    font-size: 13.5px !important;
+    font-weight: 600 !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+    word-break: break-word !important;
+  }
+
+  /* Quick Navigation Category Pills on Subpages */
+  .quick-nav-pill {
+    min-height: 40px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    font-weight: 550 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    border-radius: 9999px !important;
+  }
+
+  /* Subpage Header Banner */
+  .page-header {
+    padding-block: clamp(34px, 7vw, 44px) 24px !important;
+  }
+  .page-header h1 {
+    font-size: clamp(24px, 6.8vw, 32px) !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.025em !important;
+    margin-bottom: 12px !important;
+  }
+  .page-intro {
+    font-size: 14.5px !important;
+    line-height: 1.62 !important;
   }
 }
 
-/* 2. Hero, Positioning & Headings on Mobile (<= 640px) */
+/* Smartphone Layout Specifics (<= 640px) */
 @media (max-width: 640px) {
-  .hero {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
-  }
+  /* Hero Section: Text First, Framed Brand Image Below */
   .hero {
     display: flex !important;
     flex-direction: column !important;
@@ -5613,41 +5735,19 @@ h3 {
     width: 100% !important;
     padding: 0 !important;
   }
-  .hero-art {
-    position: relative !important;
-    order: 2 !important;
+  .hero-copy {
     width: 100% !important;
-    height: clamp(140px, 34vw, 195px) !important;
-    max-height: 195px !important;
-    margin-top: 22px !important;
-    margin-bottom: 6px !important;
-    border-radius: 14px !important;
-    overflow: hidden !important;
-    border: 1px solid #e2e8f0 !important;
-    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
-    z-index: 1 !important;
-  }
-  .hero-art-fade {
-    display: none !important;
-  }
-  .hero-eyebrow {
-    font-size: 11.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: 1.8px !important;
-    color: var(--blue) !important;
-    margin-bottom: 12px !important;
-    display: block !important;
   }
   .hero h1 {
-    font-size: clamp(28px, 8.5vw, 38px) !important;
+    font-size: clamp(28px, 8.2vw, 38px) !important;
     line-height: 1.15 !important;
-    letter-spacing: -1px !important;
+    letter-spacing: -0.025em !important;
     margin-bottom: 14px !important;
   }
   .hero-description {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    color: #4b5563 !important;
+    font-size: 14.5px !important;
+    line-height: 1.62 !important;
+    color: #475569 !important;
     margin-bottom: 22px !important;
   }
   .hero .actions {
@@ -5661,29 +5761,31 @@ h3 {
     min-height: 46px !important;
     font-size: 14.5px !important;
     justify-content: center !important;
-    box-sizing: border-box !important;
   }
+
+  /* Compact 3-Pillar Positioning Cards */
   .positioning {
     display: flex !important;
     flex-direction: column !important;
-    gap: 8px !important;
-    margin-top: 24px !important;
+    gap: 9px !important;
+    margin-top: 22px !important;
     width: 100% !important;
   }
   .positioning > div {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    padding: 10px 14px !important;
-    background: #f8fafc !important;
+    padding: 12px 14px !important;
+    background: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
-    border-radius: 8px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03) !important;
     box-sizing: border-box !important;
   }
   .positioning strong {
     font-size: 13.5px !important;
-    font-weight: 650 !important;
-    color: var(--ink) !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
     white-space: nowrap !important;
   }
   .positioning span {
@@ -5692,36 +5794,39 @@ h3 {
     text-align: right !important;
   }
 
-  .eyebrow {
-    font-size: 11.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: 1.6px !important;
-    line-height: 1.4 !important;
-    margin-bottom: 8px !important;
+  /* Framed Brand Image (Order 2, Complements Copy) */
+  .hero-art {
+    position: relative !important;
+    order: 2 !important;
+    width: 100% !important;
+    height: clamp(145px, 36vw, 195px) !important;
+    max-height: 195px !important;
+    margin-top: 22px !important;
+    margin-bottom: 6px !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06) !important;
+    z-index: 1 !important;
   }
-  h2 {
-    font-size: clamp(22px, 6.5vw, 28px) !important;
-    line-height: 1.25 !important;
-    letter-spacing: -0.5px !important;
-  }
-  .section-heading > p {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    color: #64748b !important;
-    max-width: 100% !important;
-  }
-  .section {
-    padding-block: 36px !important;
+  .hero-art-fade {
+    display: none !important;
   }
 
-  /* Capabilities row on mobile */
+  /* Capabilities Trust Strip: 2 Equal Columns */
   .trust-strip {
-    padding: 20px 0 !important;
+    padding: 22px 0 !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%) !important;
+    border-bottom: 1px solid #edf2f7 !important;
   }
   .trust-strip > .container > p {
-    font-size: 10.5px !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
     letter-spacing: 1.5px !important;
+    color: #5e6573 !important;
     margin-bottom: 14px !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
   }
   .capabilities {
     display: grid !important;
@@ -5729,36 +5834,37 @@ h3 {
     gap: 10px !important;
   }
   .capabilities > span {
-    font-size: 11.5px !important;
-    padding: 9px 10px !important;
-    background: #f8fafc !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 11px 12px !important;
+    background: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
-    border-radius: 8px !important;
+    border-radius: 9px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    gap: 7px !important;
+    gap: 8px !important;
     border-right: 1px solid #e2e8f0 !important;
     white-space: normal !important;
     line-height: 1.25 !important;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02) !important;
   }
   .capabilities svg {
-    width: 17px !important;
-    height: 17px !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: var(--blue) !important;
+    flex-shrink: 0 !important;
   }
 
-  /* About section on mobile */
+  /* About Section on Mobile */
   .about-grid {
     display: flex !important;
     flex-direction: column !important;
-    gap: 24px !important;
-  }
-  .about-copy h2 {
-    font-size: clamp(22px, 6.5vw, 28px) !important;
+    gap: 22px !important;
   }
   .about-copy > p {
-    font-size: 14px !important;
-    line-height: 1.65 !important;
+    font-size: 14.5px !important;
+    line-height: 1.62 !important;
     color: #4b5563 !important;
   }
   .about-ctas {
@@ -5770,18 +5876,20 @@ h3 {
   .about-ctas .button {
     width: 100% !important;
     justify-content: center !important;
-    min-height: 44px !important;
+    min-height: 46px !important;
   }
   .about-value {
     display: flex !important;
     gap: 14px !important;
     padding: 16px 14px !important;
-    background: #f8fafc !important;
+    background: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
     border-radius: 10px !important;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03) !important;
   }
   .about-value h3 {
     font-size: 16px !important;
+    font-weight: 700 !important;
     margin-bottom: 4px !important;
   }
   .about-value p {
@@ -5790,7 +5898,7 @@ h3 {
     color: #64748b !important;
   }
 
-  /* Divisions on mobile */
+  /* 3 Core Divisions Section */
   .division-grid-three {
     display: flex !important;
     flex-direction: column !important;
@@ -5799,19 +5907,31 @@ h3 {
   .division-card-v2 {
     padding: 22px 18px !important;
     border-radius: 12px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03) !important;
   }
   .division-card-v2 h3 {
     font-size: 19px !important;
+    font-weight: 700 !important;
   }
   .div-short {
-    font-size: 13.5px !important;
-    line-height: 1.55 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
   }
   .div-service-list li {
-    font-size: 13px !important;
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+  }
+  .div-footer .div-link {
+    min-height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 13.5px !important;
+    font-weight: 650 !important;
   }
 
-  /* Featured Capabilities on mobile */
+  /* Featured Capabilities Cards */
   .expertise-grid {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
@@ -5819,33 +5939,55 @@ h3 {
   .expertise-item {
     padding: 22px 18px !important;
     border-radius: 12px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03) !important;
   }
   .expertise-item h3 {
     font-size: 18px !important;
+    font-weight: 700 !important;
   }
   .expertise-item p {
-    font-size: 13.5px !important;
-    line-height: 1.55 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
   }
 
-  /* Insights on mobile */
+  /* Insights Section on Homepage */
   .insights-home-grid {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
   .insight-card {
-    padding: 20px 16px !important;
+    padding: 22px 18px !important;
     border-radius: 12px !important;
+    background: #ffffff !important;
   }
   .insight-card h3 {
-    font-size: 17px !important;
+    font-size: 17.5px !important;
+    font-weight: 700 !important;
   }
   .insight-card p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    color: #475569 !important;
+  }
+  .insight-tag {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+  }
+  .insight-time {
+    font-size: 12px !important;
+  }
+  .insight-footer .read-more {
+    min-height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
     font-size: 13.5px !important;
-    line-height: 1.55 !important;
+    font-weight: 650 !important;
   }
 
-  /* Contact Form on mobile */
+  /* Contact Form & Input Fields */
   .contact-form {
     padding: 22px 18px !important;
     border-radius: 12px !important;
@@ -5854,8 +5996,8 @@ h3 {
     font-size: 19px !important;
   }
   .form-heading p {
-    font-size: 13.5px !important;
-    line-height: 1.55 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
   }
   .form-row {
     display: flex !important;
@@ -5865,7 +6007,7 @@ h3 {
   .contact-form label,
   .form-row label {
     font-size: 13.5px !important;
-    font-weight: 550 !important;
+    font-weight: 600 !important;
     color: #334155 !important;
     margin-bottom: 6px !important;
   }
@@ -5876,7 +6018,7 @@ h3 {
   }
   .contact-form .privacy,
   .contact-form .configuration-note {
-    font-size: 12px !important;
+    font-size: 12.5px !important;
     line-height: 1.55 !important;
     color: #64748b !important;
   }
@@ -5888,29 +6030,34 @@ h3 {
     border-radius: 8px !important;
     padding: 10px 14px !important;
   }
+  .contact-form textarea {
+    min-height: 120px !important;
+  }
   .contact-form button[type="submit"] {
     width: 100% !important;
     min-height: 48px !important;
     font-size: 15px !important;
+    font-weight: 650 !important;
     justify-content: center !important;
   }
 
-  /* Footer on mobile */
+  /* Footer Stacked Layout */
   .footer {
-    padding-top: 36px !important;
+    padding-top: 38px !important;
     padding-bottom: 24px !important;
   }
   .footer-top {
     display: flex !important;
     flex-direction: column !important;
-    gap: 28px !important;
+    gap: 26px !important;
   }
   .footer-brand img {
-    width: 160px !important;
+    width: 150px !important;
     height: auto !important;
   }
   .footer-tagline-text {
-    font-size: 11px !important;
+    font-size: 12px !important;
+    font-weight: 650 !important;
     letter-spacing: 1.5px !important;
   }
   .footer-brief {
@@ -5924,8 +6071,11 @@ h3 {
   }
   .footer-navigation a,
   .footer-contact-list a {
-    font-size: 13.5px !important;
-    padding: 5px 0 !important;
+    font-size: 14px !important;
+    padding: 6px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
   }
   .footer-bottom {
     flex-direction: column !important;
@@ -5937,24 +6087,49 @@ h3 {
   .footer-bottom span {
     display: none !important;
   }
-
-  /* Page Header on subpages */
-  .page-header {
-    padding-block: 36px 28px !important;
-  }
-  .page-header h1 {
-    font-size: clamp(24px, 7vw, 32px) !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.8px !important;
-  }
-  .page-intro {
-    font-size: 14.5px !important;
-    line-height: 1.6 !important;
+  .back-to-top-button {
+    min-height: 44px !important;
+    font-size: 13.5px !important;
+    padding: 10px 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
-  /* Timeline & Process on mobile */
+  /* Floating WhatsApp Button */
+  .whatsapp-float {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px)) !important;
+    right: 18px !important;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4) !important;
+  }
+  .whatsapp-label {
+    display: none !important;
+  }
+
+  /* Process Timeline on Mobile */
+  .timeline-item {
+    gap: 14px !important;
+  }
+  .timeline-marker {
+    width: 34px !important;
+  }
+  .step-circle {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 13px !important;
+  }
   .timeline-card {
-    padding: 18px 14px !important;
+    padding: 18px 16px !important;
+    border-radius: 12px !important;
   }
   .timeline-card h2 {
     font-size: 18px !important;
@@ -5963,39 +6138,126 @@ h3 {
     font-size: 13px !important;
   }
   .timeline-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  .timeline-deep-dive {
+    padding: 12px 14px !important;
     font-size: 13.5px !important;
+    line-height: 1.55 !important;
   }
 
-  /* Startup support highlights */
+  /* About Us Subpage Specifics */
+  .about-overview-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .about-overview-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .about-action-row {
+    width: 100% !important;
+  }
+  .about-action-row .button {
+    width: 100% !important;
+  }
+
+  /* Startup Support Highlights & Roadmap */
   .startup-highlights {
     grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Services Subpage Summary & Details */
+  .three-divisions-summary {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .service-detail-block {
+    padding: 22px 18px !important;
+    border-radius: 12px !important;
+  }
+
+  /* Individual Article Reader on Mobile */
+  .article-header {
+    padding-block: 36px 24px !important;
+  }
+  .article-header h1 {
+    font-size: clamp(23px, 6.5vw, 30px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.02em !important;
+  }
+  .article-lead {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  .article-meta-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+  .meta-left {
+    flex-wrap: wrap !important;
+    gap: 10px 14px !important;
+    font-size: 13px !important;
+  }
+  .share-buttons {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+  .share-btn {
+    min-height: 40px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+  }
+  .article-prose p {
+    font-size: 15px !important;
+    line-height: 1.72 !important;
+    margin-bottom: 20px !important;
+  }
+  .article-nav-back .button {
+    width: 100% !important;
+    min-height: 44px !important;
+    justify-content: center !important;
   }
 }
 
-/* 3. Extra Small Screens (<= 360px, e.g. iPhone SE, compact Androids) */
+/* 3. Extra Small Screens (<= 360px, e.g. iPhone SE, 320px foldables) */
 @media (max-width: 360px) {
   .container {
-    width: calc(100% - 24px) !important;
+    width: 100% !important;
+    padding-inline: 14px !important;
   }
   .brand {
     width: 135px !important;
   }
   .hero h1 {
     font-size: 27px !important;
+    letter-spacing: -0.025em !important;
   }
   .capabilities {
     grid-template-columns: 1fr !important;
     gap: 8px !important;
   }
   .capabilities > span {
-    font-size: 11px !important;
-    padding: 8px 10px !important;
+    font-size: 12px !important;
+    padding: 9px 11px !important;
+  }
+  .positioning > div {
+    padding: 10px 12px !important;
   }
   .positioning strong {
-    font-size: 12.5px !important;
+    font-size: 13px !important;
   }
   .positioning span {
-    font-size: 11px !important;
+    font-size: 11.5px !important;
   }
   .timeline-card {
     padding: 16px 12px !important;
@@ -6004,6 +6266,6 @@ h3 {
     font-size: 17px !important;
   }
   .service-detail-block {
-    padding: 20px 14px !important;
+    padding: 18px 14px !important;
   }
 }
