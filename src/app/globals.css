@@ -3328,7 +3328,7 @@ h3 {
 
 @media (max-width: 640px) {
   .whatsapp-float {
-    bottom: 20px;
+    bottom: max(20px, env(safe-area-inset-bottom, 20px));
     right: 18px;
     padding: 12px;
     border-radius: 50%;
@@ -5396,6 +5396,110 @@ h3 {
 }
 
 /* ==========================================================================
+   HOMEPAGE INSIGHTS CARDS (Equal Heights, Badges, Subtle Glow)
+   ========================================================================== */
+.insights-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
+.insight-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+  height: 100%;
+}
+.insight-card:hover {
+  transform: translateY(-3px);
+  border-color: #93c5fd;
+  box-shadow: 0 10px 28px rgba(30, 90, 200, 0.09);
+  background: #f8fbff;
+}
+.insight-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.insight-tag {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid #dbeafe;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.insight-time {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+.insight-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+.insight-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.insight-card h3 a:hover {
+  color: var(--blue, #0284c7);
+}
+.insight-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0 0 18px 0;
+  flex-grow: 1;
+}
+.insight-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #f1f5f9;
+  margin-top: auto;
+}
+.publisher-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+}
+.insight-footer .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--blue, #0284c7);
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+.insight-footer .read-more:hover {
+  gap: 8px;
+}
+@media (max-width: 1024px) {
+  .insights-home-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================================================
    COMPREHENSIVE SMALL SCREEN & MOBILE OPTIMIZATIONS (320px – 768px)
    ========================================================================== */
 
@@ -5497,8 +5601,34 @@ h3 {
     padding-top: 24px !important;
     padding-bottom: 24px !important;
   }
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 18px !important;
+    padding-bottom: 24px !important;
+    position: relative !important;
+  }
   .hero-inner {
+    order: 1 !important;
+    width: 100% !important;
     padding: 0 !important;
+  }
+  .hero-art {
+    position: relative !important;
+    order: 2 !important;
+    width: 100% !important;
+    height: clamp(140px, 34vw, 195px) !important;
+    max-height: 195px !important;
+    margin-top: 22px !important;
+    margin-bottom: 6px !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
+    z-index: 1 !important;
+  }
+  .hero-art-fade {
+    display: none !important;
   }
   .hero-eyebrow {
     font-size: 11.5px !important;
@@ -5694,6 +5824,23 @@ h3 {
     font-size: 18px !important;
   }
   .expertise-item p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Insights on mobile */
+  .insights-home-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .insight-card {
+    padding: 20px 16px !important;
+    border-radius: 12px !important;
+  }
+  .insight-card h3 {
+    font-size: 17px !important;
+  }
+  .insight-card p {
     font-size: 13.5px !important;
     line-height: 1.55 !important;
   }
